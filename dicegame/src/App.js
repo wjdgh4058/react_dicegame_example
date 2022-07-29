@@ -1,11 +1,15 @@
+import Button from "./Button";
 import Dice from "./Dice";
+
 
 function App(){
     return (
     <div>
-        <Dice />
-        <p>주사위 테스트2</p>
-        <p>주사위 테스트3</p>
+        <div>
+            <Button>던지기</Button>
+            <Button>처음부터</Button>
+        </div>
+        <Dice color="red" num={2}/>
     </div>);
 }
 
