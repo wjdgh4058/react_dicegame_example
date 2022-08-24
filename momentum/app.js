@@ -1,39 +1,13 @@
-const h1 = document.querySelector("div.hello:first-child h1")
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-function handletitleclick(){
-    h1.style.color ="blue";
+
+//username 검사 -> username이 없으면 안되고, 너무 긴것또한 안된다.
+function loginBtnClick(){
+    const value = loginInput.value;
+    if(value === ""){
+        console.log("please write your name");
+    }
 }
 
-function handleMouseEnter(){
-    h1.innerText = "mouse is here!"
-}
-
-function handleMouseLeave(){
-    h1.innerText = "mouse is gone!"
-}
-
-function handleWindowResize(){
-    document.body.style.backgroundColor = "tomato";
-}
-
-function handleWindowCopy(){
-    alert("copier!");
-}
-
-function handleWinsowOffline(){
-    alert("SOS no wifi");
-}
-
-function handleWinsowOnline(){
-    alert("ALL GOOD!");
-}
-
-
-h1.addEventListener("click",handletitleclick);
-h1.addEventListener("mouseenter",handleMouseEnter);
-h1.addEventListener("mouseleave",handleMouseLeave);
-
-window.addEventListener("resize",handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline",handleWinsowOffline);
-window.addEventListener("online",handleWinsowOnline);
+loginButton.addEventListener("click",loginBtnClick );
