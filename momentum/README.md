@@ -14,3 +14,11 @@ localStorage.setItem("key","value") -> localStorage에 값을 저장한다.
 localStorage.getItem() -> localStorage에 값을 가져온다.
 
 localStorage.removeItem() -> localStorage에 값을 저장한다.
+
+interval -> 매번 일어나야 하는 무언가 -> 두개의 argument를 받는다. 1번째는 실행하고자 하는 function
+2번째는 호출되는 function 간격을 몇 ms로 할지   => setInterval( , )
+
+timeout -> 두개의 argument를 받는다. setTimeout(실행할 function,얼마나 기다릴지)
+
+padStart(문자열길이,'추가할문자') -> 문자열 길이를 정하고, 문자열길이보다 짧으면 추가할 문자를 앞에 추가해서 길이를 맞춰준다. 
+padEnd() -> 추가할 문자를 뒤에 추가해준다.
