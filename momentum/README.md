@@ -22,3 +22,9 @@ timeout -> 두개의 argument를 받는다. setTimeout(실행할 function,얼마
 
 padStart(문자열길이,'추가할문자') -> 문자열 길이를 정하고, 문자열길이보다 짧으면 추가할 문자를 앞에 추가해서 길이를 맞춰준다. 
 padEnd() -> 추가할 문자를 뒤에 추가해준다.
+
+이모트 => 윈도우 + .   => 👌
+
+array.forEach(function) => array에 들어있는 item들을 하나씩 인자로 넣어서 함수를 실행시켜준다.
+
+array.filter(function) => array에 있는 요소들로 한번씩 함수가 실행되고 true인 요소들은 유지, false인 요소는 제거하고 array를 재생성한다.
