@@ -28,3 +28,5 @@ padEnd() -> 추가할 문자를 뒤에 추가해준다.
 array.forEach(function) => array에 들어있는 item들을 하나씩 인자로 넣어서 함수를 실행시켜준다.
 
 array.filter(function) => array에 있는 요소들로 한번씩 함수가 실행되고 true인 요소들은 유지, false인 요소는 제거하고 array를 재생성한다.
+
+fetch => url을 요청해서 가져온다. js가 url을 부른다.
