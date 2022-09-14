@@ -9,22 +9,21 @@
 
     <script type="text/babel">
         const root = document.getElementById("root");
+        let counter =0;
+        function countUp() {
+            counter = counter + 1;
+            render();
+        }
 
-        const Title = () => (<h3 id ="Title" 
-                        onMouseEnter={() => console.log("mouse enter")}>
-                        hello im a span
-                        </h3>);
+        function render(){
+            ReactDOM.render(<Container/>, root);
+        }
 
-        const Btn = () => (<button 
-            style={{backgroundColor: "tomato",}} 
-            onClick = {() => console.log("i'm clicked")}>
-            click me
-            </button>);
-
-        const Container =()=> (<div>
-            <Title />
-            <Btn />
+        const Container =()=> (
+            <div>
+            <h3>Total clicks: {counter}</h3>
+            <button onClick={countUp}>Click me</button>
             </div>)
-        ReactDOM.render(<Container/>, root);
+            render();
     </script>
 </html>
