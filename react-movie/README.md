@@ -28,3 +28,8 @@ Switch => Route 를 찾는거 원하는 Route를 한번에 렌더링 할수있�
     </Router>
 
 =>라우터 구조 복습하기. Router 안에 Switch 그 안에 Route로 페이지 설정 가능.
+
+Link => 브라우저 새로고침 없이도 유저를 다른 페이지로 이동시켜주는 컴포넌트
+원하는 태그에 <Link to ="주소">{내용}</Linsk> 하면 새로고침 없이 빠르게 이용할수 있다.
+
+useParams => 변화된 url의 값을 가져온다.
