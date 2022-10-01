@@ -11,3 +11,20 @@ const getMovies = async() => {
     };
 
 api 호출할때 .then 안쓰고 async await 사용하는거 한번 더 연습하기.
+
+router => URL을 보고있는 component이다
+
+Switch => Route 를 찾는거 원하는 Route를 한번에 렌더링 할수있게 해준다.
+
+<Router>
+      <Switch>
+        <Route path="/movie">
+          <Detail />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+
+=>라우터 구조 복습하기. Router 안에 Switch 그 안에 Route로 페이지 설정 가능.
