@@ -14,7 +14,7 @@ function App() {
         <Route path="/movie/:id">
           <Detail />
         </Route>
-        <Route path="/">
+        <Route path="/" exact = {true}>
           <Home />
         </Route>
       </Switch>

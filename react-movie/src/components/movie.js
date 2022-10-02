@@ -25,5 +25,4 @@ Movie.propTypes = {
     summary : propTypes.string.isRequired,
     genres : propTypes.arrayOf(propTypes.string).isRequired,
 };
-
 export default Movie;
